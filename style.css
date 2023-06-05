@@ -1,0 +1,261 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-image: url(hs.jpg);
+    background-size: cover;
+}
+
+nav {
+    background-color: #046200;
+    padding: 1rem;
+    max-height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#nav-link-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    column-gap: 2rem;
+}
+
+#nav-link-group .nav-link{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #f6f7f2;
+}
+
+header{
+    text-align: center;
+    min-height: 3rem;
+    background-color: #046200;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin: 0;
+    color: whitesmoke;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 500;
+    background-color: #78E07A;
+    color: #f6f7f2;
+    margin: 4rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px #f6f7f2;
+}
+
+h3 {
+    margin: 0;
+    color: whitesmoke;
+}
+
+.success{
+    margin: 0;
+    color: green;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.fail{
+    margin: 0;
+    color: rgb(233, 35, 35);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+main{
+    min-height: calc(100vh - 6rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main-menu{
+    background-color: #046200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+}
+
+.main-button{
+    min-height: 6rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-choose{
+    text-align: center;
+    min-width: 12rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-radius: 10px;
+    margin: 2rem;
+    margin-top: 0;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    background-color: #78E07A;
+    box-shadow: 5px 5px #f6f7f2;
+}
+
+.main-choose a:active, a:link, a:visited{
+    color:	#f6f7f2;
+    text-decoration: none;
+}
+
+.main-choose a:hover{
+    color:#f6f7f2;
+    text-decoration: underline overline;
+}
+
+form{
+    min-height: calc(100vh - 3rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+fieldset{
+    min-width: 50%;
+    width: max-content;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: ce;
+    align-content: space-around;
+    padding: 4rem;
+    background-color: #78E07A;
+    border-radius: 10px;
+    box-shadow: 10px 10px #f6f7f2;
+}
+
+label{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+input, select, textarea{
+    width: 100%;
+}
+
+input[type=radio]{
+    width:auto;
+}
+
+input[type=submit]{
+    width: 50%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: #046200;
+    border: transparent;
+    color: whitesmoke;
+    box-shadow: 3px 3px #f6f7f2;
+}
+
+.submit{
+    text-align: center;
+}
+
+button{
+    width: 5%;
+    height: max-content;
+    background-color: transparent;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.list-siswa{
+    min-height: calc(100vh - 11rem);
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+table{
+    background-color: #78E07A;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: #046200;
+    color: #78E07A;
+    padding: 0.5rem;
+}
+
+td{
+    padding-left: 0.5rem;
+}
+
+tr > td.tool{
+    min-height: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    column-gap: 1rem;
+}
+
+.tool-edit{
+    border-radius: 5px;
+    background-color: green;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.tool-hapus{
+    border-radius: 5px;
+    background-color: red;
+    padding-left: 1rem;
+    padding-right: 1rem;  
+    font-size: 1.5rem;
+}
+
+.tool a{
+    color: #78E07A;
+}
+
+#total{
+    width: fit-content;
+    background-color: #046200;
+    color: #78E07A;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 5px 5px #f6f7f2;
+}
+
+td.photo{
+    text-align: center;
+}
